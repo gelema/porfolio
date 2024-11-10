@@ -1,4 +1,12 @@
 # Porfolio Minimal 
+Schema del JSON de CV:
+https://jsonresume.org/schema
+
+Basado en el Disenio de:
+https://cv.jarocki.me
+
+Imagen tomada para su uso
+https://wallpapers.com/images/high/
 
 ```sh
 pnpm create astro@latest 
@@ -11,18 +19,32 @@ Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 /
-├── public/
-│   └── favicon.svg
+── public/
+│   └── favicon.svg
 ├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
+│   ├── components/
+│   │   ├── KeyboardManager.astro
+│   │   ├── Section.astro
+│   │   └── sections/
+│   │       ├── About.astro
+│   │       ├── Education.astro
+│   │       ├── Experience.astro
+│   │       ├── Hero.astro
+│   │       ├── Projects.astro
+│   │       └── Skill.astro
+│   ├── icons/
+│   │   ├── Github.astro
+│   │   ├── LinkedIn.astro
+│   │   ├── Mail.astro
+│   │   ├── Phone.astro
+│   │   ├── WoldMap.astro
+│   │   └── X.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
 └── package.json
 ```
-
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
 There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
